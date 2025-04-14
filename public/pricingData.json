@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Basic",
+      "price": "$29/month",
+      "description": "Access to essential gym facilities for beginners.",
+      "features": [
+        "Access to gym equipment",
+        "Locker room access",
+        "Free Wi-Fi",
+        "1 fitness assessment/month",
+        "Open gym (6am–10pm)",
+        "Mobile app access"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$59/month",
+      "description": "More features for regular fitness enthusiasts.",
+      "features": [
+        "Everything in Basic",
+        "Unlimited group fitness classes",
+        "1 personal training session/month",
+        "Access to sauna & steam room",
+        "Free monthly protein shake",
+        "Body composition tracking",
+        "Towel service"
+      ]
+    },
+    {
+      "name": "Elite",
+      "price": "$89/month",
+      "description": "Full VIP experience for dedicated athletes.",
+      "features": [
+        "Everything in Pro",
+        "Weekly personal training sessions",
+        "Custom nutrition & workout plan",
+        "Private locker with name tag",
+        "Massage therapy (1/month)",
+        "Priority class booking",
+        "2 guest passes/month",
+        "Discounts on gym merchandise"
+      ]
+    }
+  ]
+  
