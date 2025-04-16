@@ -1,28 +1,29 @@
+import { Suspense } from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Pricing from "./Components/Pricing/Pricing";
+import ResultChart from "./Components/ResultChart/ResultChart";
 
-import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Pricing from './Components/Pricing/Pricing'
-
-
-const PricingPromise = fetch("pricingData.json")
-             .then(res => res.json())
+const PricingPromise = fetch("pricingData.json").then((res) => res.json());
 function App() {
-
   return (
     <>
       <header>
-      <Navbar></Navbar>
+        <Navbar></Navbar>
       </header>
       <main>
-        <suspense fallback={<span className="loading loading-spinner loading-xl"></span>
-}>
-          <Pricing PricingPromise={PricingPromise}>
+        <Suspense
+          fallback={
+            <span className="loading loading-spinner loading-xl"></span>
+          }
+        >
+          <Pricing PricingPromise={PricingPromise}></Pricing>
+        </Suspense>
 
-          </Pricing>
-        </suspense>
+        <ResultChart></ResultChart>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

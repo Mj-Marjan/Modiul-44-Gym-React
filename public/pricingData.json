@@ -15,6 +15,7 @@
     {
       "name": "Pro",
       "price": "$59/month",
+      "Popular": true,
       "description": "More features for regular fitness enthusiasts.",
       "features": [
         "Everything in Basic",
